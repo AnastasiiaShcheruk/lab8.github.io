@@ -1,5 +1,5 @@
 const userName = prompt("Введіть ваше ім'я:") || "Користувач";
-document.getElementById("user").querySelector(".score").textContent = `${userName} Score: 0`;
+document.getElementById("user").querySelector(".score").textContent = `Рахунок ${userName}: 0`;
 
 const userScoreEl = document.getElementById("userScore");
 const userNumberEl = document.getElementById("userNumber");
@@ -44,8 +44,8 @@ function endGame() {
 resetButton.addEventListener("click", () => {
     userScore = 0;
     computerScore = 0;
-    userScoreEl.textContent = `${userName} Score: ${userScore}`;
-    computerScoreEl.textContent = `Computer Score: ${computerScore}`;
+    userScoreEl.textContent = `Рахунок ${userName}: ${userScore}`;
+    computerScoreEl.textContent = `Рахунок комп'ютера: ${computerScore}`;
     userNumberEl.textContent = '0';
     computerNumberEl.textContent = '0';
     winnerMessage.textContent = '';
