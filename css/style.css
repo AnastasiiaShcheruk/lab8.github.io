@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comfortaa', sans-serif;
+  background: url('../img/bg8.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  color: #423073;
+  font-weight: bolder;
+  margin-top: 28px;
+}
+
+.mainContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #FBDADC;
+  border-radius: 60px;
+  border: 10px solid #C2A0E4;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.playersContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.score {
+  font-size: 20px;
+  color: #423073; 
+  background-color: #F9C8CB; 
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 7px solid #C2A0E4; 
+}
+
+.numberBox {
+  font-size: 36px;
+  color: #423073; 
+  background-color: #C2A0E4; 
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 7px solid #C2A0E4; 
+  box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.playButton {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 20px; 
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold; 
+  color: #423073; 
+  background-color: #F7B6BA; 
+  border: 7px solid #C2A0E4; 
+  border-radius: 30px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.playButton:hover {
+  background-color: #F39197;
+}
+
+.playButton:disabled {
+  background-color: #F39197;
+  cursor: not-allowed;
+}
+
+.winner {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #C0180C;
+}
